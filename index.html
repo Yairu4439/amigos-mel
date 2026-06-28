@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#170b22">
+    <title>Para Melody</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <canvas class="sky" id="skyCanvas" aria-hidden="true"></canvas>
+    <div class="petals" id="petalLayer" aria-hidden="true"></div>
+
+    <main class="phone-story" aria-live="polite">
+      <section class="screen is-active" data-screen="0" aria-label="Inicio">
+        <div class="screen-inner hero-screen">
+          <div class="galaxy-stage is-forming" data-galaxy-stage>
+            <canvas class="intro-galaxy" id="introGalaxy" data-galaxy aria-hidden="true"></canvas>
+          </div>
+          <p class="eyebrow">Una carta tranquila</p>
+          <h1>Melody</h1>
+          <p>
+            Hola, Melody. Hice esto porque, la verdad, decirte estas cosas en
+            persona me costaría bastante. Seguro me pondría nervioso, me
+            costaría mirarte a los ojos y se me irían varias palabras.
+          </p>
+          <button class="main-button" type="button" data-next>
+            Empezar
+          </button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="1" aria-label="Lo que me cuesta decir">
+        <div class="screen-inner">
+          <img class="sticker sticker-small" src="assets/images/stickers/abracito.png" alt="" aria-hidden="true">
+          <p class="eyebrow">Primero</p>
+          <h2>Soy medio torpe para estas cosas.</h2>
+          <p>
+            Creo que ya te habrás dado cuenta de que soy una persona un poco
+            nerviosa. Sobre todo cuando se trata de hablar de amor, cariño o de
+            cosas que de verdad me importan.
+          </p>
+          <p>
+            Por eso preferí escribirlo así: para explicarme mejor, con calma,
+            y decirte las cosas claras, como me salen del corazón.
+          </p>
+          <button class="main-button" type="button" data-next>
+            Seguir leyendo
+          </button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="2" aria-label="Lo que entendí">
+        <div class="screen-inner">
+          <img class="sticker sticker-small right" src="assets/images/animated/gatito_corazon_animado.gif" alt="" aria-hidden="true">
+          <p class="eyebrow">Lo que entendí</p>
+          <h2>Yo ya entendí que somos amigos.</h2>
+          <p>
+            Siento que entre los dos hay como una distancia nueva. No sé si
+            llamarla límite, pero ya entendí el mensaje: somos amigos.
+          </p>
+          <p>
+            Me sigues gustando, no voy a fingir que no. Pero ya no quiero
+            empujar algo que no está naciendo igual de los dos lados. Prefiero
+            tomarlo con calma y seguir valorando tu amistad.
+          </p>
+          <button class="main-button" type="button" data-next>
+            Lo bonito que guardo
+          </button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="3" aria-label="Lo bonito">
+        <div class="screen-inner">
+          <img class="sticker sticker-wide" src="assets/images/animated/bubu_dudu_abrazo.gif" alt="" aria-hidden="true">
+          <p class="eyebrow">Lo bonito</p>
+          <h2>Hay cosas que sí me encantaban.</h2>
+          <p>
+            Y no te voy a mentir: cuando te fui conociendo, una parte de mí
+            decía: guau, esta chica tiene todo lo que yo siempre he buscado.
+            Para mí era como ver a un ser místico, algo que pensé que nunca
+            existiría, pero sí existía. Me gustaba tu forma de ser, tus gustos
+            y esa manera tuya de hacer que una conversación no se sintiera vacía.
+          </p>
+          <div class="memory-stack">
+            <article>
+              <span>01</span>
+              <p>Esos abrazos largos que, la verdad, me daban muchísima paz.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <p>Estar viendo Rick y Morty, una película o cualquier cosa contigo.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <p>Agarrarte la mano, aunque no sé si a ti también te gustaba.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <p>Hablar de anime, comedia, ciencia ficción e ideas raras.</p>
+            </article>
+          </div>
+          <button class="main-button" type="button" data-next>
+            Seguir
+          </button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="4" aria-label="Amistad">
+        <div class="screen-inner">
+          <img class="sticker sticker-small" src="assets/images/stickers/gatito_abraza_corazon.png" alt="" aria-hidden="true">
+          <p class="eyebrow">Lo que quiero cuidar</p>
+          <h2>Si esto se queda en amistad, quiero hacerlo bien.</h2>
+          <p>
+            A mí me gustaría que pudiéramos seguir siendo amigos con confianza:
+            darnos abrazos, ver algo juntos, reírnos y estar bien, como dos
+            personas que se tienen cariño.
+          </p>
+          <p>
+            Y si algo no te nace, está bien. Prefiero que lo nuestro sea
+            natural, sin forzar momentos y sin hacer las cosas raras.
+          </p>
+          <button class="main-button" type="button" data-next>
+            Un último gesto
+          </button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="5" aria-label="Minijuego del corazón">
+        <div class="screen-inner game-screen">
+          <img class="sticker sticker-game" src="assets/images/animated/bubu_dudu_amor.gif" alt="" aria-hidden="true">
+          <p class="eyebrow">Un gesto simbólico</p>
+          <h2>Voy a recuperar mi pedacito de corazón.</h2>
+          <p>
+            No lo hago para borrar lo que sentí, porque lo que sentí fue real.
+            Lo hago para guardarlo bonito y poder quererte de una forma más
+            tranquila, como amiga.
+          </p>
+          <button class="main-button" id="startGame" type="button">
+            Recuperarlo
+          </button>
+
+          <div class="game-field" id="gameField" hidden>
+            <p class="game-help">Toca los 8 pedacitos que flotan.</p>
+            <div class="score" id="scoreText">0 / 8</div>
+            <div class="heart-home" aria-hidden="true">
+              <canvas class="mini-galaxy" id="gameGalaxy" data-galaxy></canvas>
+            </div>
+            <button class="soft-button" id="retryGame" type="button">
+              Intentar de nuevo
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="6" aria-label="Final">
+        <div class="screen-inner final-screen">
+          <div class="galaxy-stage final-galaxy-stage is-forming" data-galaxy-stage>
+            <canvas class="intro-galaxy final-galaxy" id="finalGalaxy" data-galaxy aria-hidden="true"></canvas>
+          </div>
+          <p class="eyebrow">Pedacito recuperado</p>
+          <h2>Gracias por leerme, Melody.</h2>
+          <p>
+            Me quedo con lo bonito, voy a soltar lo que tenga que soltar y voy
+            a cuidar nuestra amistad con respeto. Me importas, y quiero que lo
+            que siga entre nosotros se sienta tranquilo y sincero.
+          </p>
+          <button class="main-button" type="button" data-restart>
+            Leer otra vez
+          </button>
+        </div>
+      </section>
+
+      <nav class="story-nav" aria-label="Progreso">
+        <button class="dot is-active" type="button" data-jump="0" aria-label="Ir al inicio"></button>
+        <button class="dot" type="button" data-jump="1" aria-label="Ir a la parte 1"></button>
+        <button class="dot" type="button" data-jump="2" aria-label="Ir a la parte 2"></button>
+        <button class="dot" type="button" data-jump="3" aria-label="Ir a la parte 3"></button>
+        <button class="dot" type="button" data-jump="4" aria-label="Ir a la parte 4"></button>
+        <button class="dot" type="button" data-jump="5" aria-label="Ir al juego"></button>
+      </nav>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
